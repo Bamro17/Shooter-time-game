@@ -13,6 +13,7 @@ public class PlayerConrtoller : MonoBehaviour
     public bool isDead = false;
     public GameObject backupCamera;
     public GameObject mainCamera;
+    public Cavemen cm;
 
     // Start is called before the first frame update
     void Start()
@@ -78,5 +79,6 @@ public class PlayerConrtoller : MonoBehaviour
         {
             healthCounter--;
         }
+        
     }
 }
