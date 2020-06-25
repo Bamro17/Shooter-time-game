@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &62516350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6750079710815073565, guid: b3d7d91a0b276124697f01047c69def0,
+    type: 3}
+  m_PrefabInstance: {fileID: 685020359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3deb642d5956fb74dab4c73f1f0ce353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &202762143
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,11 +415,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b84394e1e784384e831c632b050513a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 756298417}
   radius: 10
   swordS: {fileID: 1861989536}
   swordA: {fileID: 1765017718}
-  pc: {fileID: 0}
+  pc: {fileID: 62516350}
   pauser: 0
 --- !u!54 &442559152
 Rigidbody:
@@ -440,17 +452,17 @@ PrefabInstance:
     - target: {fileID: 6750079710815073562, guid: b3d7d91a0b276124697f01047c69def0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 6750079710815073562, guid: b3d7d91a0b276124697f01047c69def0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.55205
+      value: 30.16
       objectReference: {fileID: 0}
     - target: {fileID: 6750079710815073562, guid: b3d7d91a0b276124697f01047c69def0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.38
+      value: -52.4
       objectReference: {fileID: 0}
     - target: {fileID: 6750079710815073562, guid: b3d7d91a0b276124697f01047c69def0,
         type: 3}
@@ -504,6 +516,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3d7d91a0b276124697f01047c69def0, type: 3}
+--- !u!1 &756298417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6750079711506707296, guid: b3d7d91a0b276124697f01047c69def0,
+    type: 3}
+  m_PrefabInstance: {fileID: 685020359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765017718
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +695,7 @@ GameObject:
   - component: {fileID: 1802379248}
   - component: {fileID: 1802379247}
   - component: {fileID: 1802379246}
+  - component: {fileID: 1802379249}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Melee
@@ -757,6 +776,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802379244}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1802379249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802379244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44fd861ff1c4d94eb3706a5c412dbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cm: {fileID: 442559151}
 --- !u!1 &1861989536
 GameObject:
   m_ObjectHideFlags: 0

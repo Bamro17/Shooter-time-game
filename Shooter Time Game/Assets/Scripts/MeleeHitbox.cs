@@ -16,14 +16,15 @@ public class MeleeHitbox : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.CompareTag("player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            cm.swordS.SetActive(false);
-            cm.swordA.SetActive(true);
-            cm.pauser = true;
+            cm.swordS.gameObject.SetActive(false);
+            cm.swordA.gameObject.SetActive(true);
+            cm.pauser = 1;
+            Debug.Log(cm.pauser);
         }
     }
 }

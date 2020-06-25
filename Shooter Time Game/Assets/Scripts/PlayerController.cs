@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerConrtoller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public int speed = 5;
     public int rotateSpeed = 30;
@@ -51,14 +51,7 @@ public class PlayerConrtoller : MonoBehaviour
             {
                 transform.Translate(Vector3.right * speed * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.Q))
-            {
-                transform.Rotate(Vector3.down * rotateSpeed * Time.deltaTime);
-            }
-            if (Input.GetKey(KeyCode.E))
-            {
-                transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-            }
+            
             if (Input.GetButtonDown("Jump") && jumping == false)
             {
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
