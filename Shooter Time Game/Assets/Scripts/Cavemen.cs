@@ -39,5 +39,5 @@ public class Cavemen : MonoBehaviour
             pauser = 0;
         }
     }
-    
+
 }
